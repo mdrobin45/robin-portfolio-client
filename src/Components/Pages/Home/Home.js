@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeBanner from './HomeBanner/HomeBanner';
+import HomeContact from './HomeContact/HomeContact';
 import ProjectTab from './ProjectTab/ProjectTab';
 
 const Home = () =>
@@ -7,7 +8,8 @@ const Home = () =>
     return (
         <div>
             <HomeBanner />
-            <ProjectTab/>
+            <ProjectTab />
+            <HomeContact/>
         </div>
     );
 };
