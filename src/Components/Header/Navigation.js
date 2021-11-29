@@ -1,11 +1,13 @@
 import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Link } from 'react-router-dom';
 
 
 const navigation = [
-    { name: 'Home', to: '/', current: true }
+    { name: 'Home', to: '/'},
+    { name: 'Contact', to: '/contact' },
+    { name: 'GET IN TOUCH', to: '/contact',current:true}
 ]
   
 function classNames(...classes) {
@@ -31,26 +33,17 @@ const Navigation = () => {
                         </div>
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                             <div className="flex-shrink-0 flex items-center">
-                                <img
-                                    className="block lg:hidden h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                                    alt="Workflow"
-                                />
-                                <img
-                                    className="hidden lg:block h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                                    alt="Workflow"
-                                />
+                                <h2 className='text-5xl font-bold'>Robin.</h2>
                             </div>
                             <div className="hidden sm:block sm:ml-6">
-                                <div className="flex space-x-4">
+                                <div className="flex mt-1.5 space-x-4">
                                     {navigation.map((item) => (
                                     <Link
                                         key={item.name}
                                         to={item.to}
                                         className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
-                                        'px-3 py-2 rounded-md text-sm font-medium'
+                                        item.current ? 'bg-primary text-white' : 'text-gray-700 hover:bg-primary hover:text-white',
+                                        'px-3 py-2 rounded-md font-medium'
                                         )}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
@@ -70,8 +63,8 @@ const Navigation = () => {
                             key={item.name}
                             to={item.to}
                             className={classNames(
-                            item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
-                            'px-3 py-2 rounded-md text-sm font-medium'
+                            item.current ? 'bg-primary text-white' : 'text-gray-700 hover:bg-primary hover:text-white',
+                            'px-3 py-2 rounded-md font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                         >

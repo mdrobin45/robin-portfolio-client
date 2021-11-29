@@ -57,6 +57,7 @@ const ProjectTab = () =>
                         <div className=''>
                            <img className='m-auto' src={project?.image} alt="Portfolio" />
                             <h2 className='text-3xl pt-3 font-bold'>{project?.name}</h2>
+                            <p className='text-lg text-gray-500'>{project?.shortDes}</p>
                             <div className='md:flex justify-between'>
                                 <a className='px-10 text-center w-full border-2 border-primary bg-primary py-2 shadow-xl md:mx-3 rounded-full text-white text-lg inline-block mt-6' rel="noopener noreferrer" href={project?.live} target='_blank'>Visit Site</a>
                                 <Link className='px-10 border-2 w-full border-primary text-center bg-primary py-2 shadow-xl md:mx-3 rounded-full text-white text-lg inline-block mt-6' rel="noopener noreferrer" to={`/projects/${project?.id}`}>Details</Link>

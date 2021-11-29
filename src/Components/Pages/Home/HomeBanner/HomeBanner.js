@@ -4,7 +4,7 @@ import '../../../CustomStyle/Style.css'
 
 const HomeBanner = () => {
     return (
-        <div className='homeBannerLeft'>
+        <div className='homeBannerLeft mt-16'>
             <div className='md:flex container items-center'>
                 <div className='md:w-2/4'>
                     <h1 className='font-bold md:text-5xl pb-4 text-3xl'>Hi, I'm Full Stack Web <span className='text-primary'>Developer & React Expert</span></h1>

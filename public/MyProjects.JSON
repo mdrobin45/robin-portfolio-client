@@ -4,20 +4,23 @@
         "name": "HeadPhone Shop",
         "category": "ecommerce",
         "image": "https://i.ibb.co/0jdCKs2/Screenshot-1.png",
-        "live": "https://headphone--shop.web.app/"
+        "live": "https://headphone--shop.web.app/",
+        "shortDes": "It is a ecommerce website. Here you can find various type of headphone and order them as you want."
     },
     {
         "id": 2,
         "name": "Travel Agency",
         "category": "booking",
         "image": "https://i.ibb.co/ZM30Tq7/Screenshot-1.png",
-        "live": "https://travel-agency-ccd0d.web.app/"
+        "live": "https://travel-agency-ccd0d.web.app/",
+        "shortDes": "It is a travel room book related website. People can book their room as their own choice."
     },
     {
         "id": 3,
         "name": "Dental Service",
         "category": "service",
         "image": "https://i.ibb.co/DDbFqq3/Screenshot-2.png",
-        "live": "http://robin-dentist.netlify.app/"
+        "live": "http://robin-dentist.netlify.app/",
+        "shortDes": "It is a dental website. Here you can book appointment for treatment dental."
     }
 ]
