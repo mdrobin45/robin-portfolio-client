@@ -18,5 +18,6 @@
 .contactLeft{
     background-image: url('../../images/contact-bg-shape.png');
     background-position-x: -96px;
+    background-position-y: 80px;
     background-repeat: no-repeat;
 }
