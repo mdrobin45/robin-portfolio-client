@@ -1,0 +1,17 @@
+.homeBannerLeft{
+    background-image: url('../../images/bannerBg.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.myProjectHeader {
+    background-image: url('../../images/myProjectHeader.png');
+    background-repeat: no-repeat;
+    background-position-x: 104px;
+    background-position-y: 20px;
+}
+.projectBg{
+    background-image: url('../../images/myProjectBg.png');
+    background-repeat: no-repeat;
+    background-position-x: -83px;
+    background-position-y: 20px;
+}
