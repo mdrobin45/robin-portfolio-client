@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 
 const navigation = [
     { name: 'Home', to: '/'},
-    { name: 'Contact', to: '/contact' }
+    { name: 'Projects', to: '/projects' },
+    { name: 'Blog', to: '/blog' }
 ]
   
 function classNames(...classes) {
@@ -49,6 +50,7 @@ const Navigation = () => {
                                         {item.name}
                                     </Link>
                                     ))}
+                                    <a className='px-3 py-2 font-medium text-gray-700' href="/#aboutMe">About Me</a>
                                     <a className='bg-primary px-3 py-2 rounded-md font-medium text-white' href="/#HomeContact">GET IN TOUCH</a>
                                 </div>
                             </div>

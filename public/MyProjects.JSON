@@ -2,25 +2,88 @@
     {
         "id": 1,
         "name": "HeadPhone Shop",
+        "githubClient": "https://github.com/mdrobin45/headphone-shop-client-side",
+        "githubServer": "https://github.com/mdrobin45/headphone-shop-server",
         "category": "ecommerce",
         "image": "https://i.ibb.co/0jdCKs2/Screenshot-1.png",
         "live": "https://headphone--shop.web.app/",
-        "shortDes": "It is a ecommerce website. Here you can find various type of headphone and order them as you want."
+        "shortDes": "It is a ecommerce website. Here you can find various type of headphone and order them as you want.",
+        "gallery": [
+            "https://i.ibb.co/QC8kGcs/footer.jpg",
+            "https://i.ibb.co/Pxh9PZB/quality.jpg",
+            "https://i.ibb.co/RHrLPYK/headphones.jpg",
+            "https://i.ibb.co/6mSXqBN/testimonial.jpg"
+        ],
+        "feature": [
+            "It is a headphone commerce website. Here people find various only headPhones. They can choose their own choice and order the product.",
+            "In this website you user have to register or login. If they have account they can direct login or if they have not any account they have to create a new accout by clicking register button",
+            "Also in this website inplemented admin side. An admin can delete, update, check all orders which visitors stored. Also he/she can make an admin as want."
+        ],
+        "technology": [
+            "React JS",
+            "Node JS",
+            "Express JS",
+            "MongoDB",
+            "Firebase",
+            "Tailwind CSS",
+            "NPM Packages"
+        ]
     },
     {
         "id": 2,
         "name": "Travel Agency",
         "category": "booking",
-        "image": "https://i.ibb.co/ZM30Tq7/Screenshot-1.png",
+        "image": "https://i.ibb.co/56GHSSY/manage.jpg",
         "live": "https://travel-agency-ccd0d.web.app/",
-        "shortDes": "It is a travel room book related website. People can book their room as their own choice."
+        "githubClient": "https://github.com/mdrobin45/tourism-client-side",
+        "githubServer": "https://github.com/mdrobin45/tourism-server-side",
+        "shortDes": "It is a travel room book related website. People can book their room as their own choice.",
+        "gallery": [
+            "https://i.ibb.co/W6jqS16/banner.jpg",
+            "https://i.ibb.co/56GHSSY/manage.jpg",
+            "https://i.ibb.co/SRxxG29/order.jpg",
+            "https://i.ibb.co/qW4xcCs/rooms.jpg"
+        ],
+        "feature": [
+            "This is travel agency website. In this website implemented booking system. Visitor can book any kind of room from this site.",
+            "Also in this site visitor can see spacific room details by clicking read more button.",
+            "In this site user login implemented. A user must be login for complete booking. Here used many features and in future will add more features for admin and visitors"
+        ],
+        "technology": [
+            "React JS",
+            "Firebase",
+            "Tailwind CSS",
+            "NPM Packages"
+        ]
     },
     {
         "id": 3,
         "name": "Dental Service",
         "category": "service",
-        "image": "https://i.ibb.co/DDbFqq3/Screenshot-2.png",
+        "image": "https://i.ibb.co/W6jqS16/banner.jpg",
         "live": "http://robin-dentist.netlify.app/",
-        "shortDes": "It is a dental website. Here you can book appointment for treatment dental."
+        "githubServer": "https://github.com/mdrobin45/robinDoctorWebsiteServer",
+        "githubClient": "https://github.com/mdrobin45/doctor-portal",
+        "shortDes": "It is a dental website. Here you can book appointment for treatment dental.",
+        "gallery": [
+            "https://i.ibb.co/3Sfsybg/about.jpg",
+            "https://i.ibb.co/6PQynQK/banner.jpg",
+            "https://i.ibb.co/0Fysx11/detail.jpg",
+            "https://i.ibb.co/ZKnkHJ8/service.jpg"
+        ],
+        "feature": [
+            "This website create for provide dental service. Here we put various type of service for dental. Visitor can view details and book appointment for any service. Also they can select some doctor as they want",
+            "Here I implemented admin panel for a admin. An admin can see all appointments from admin dashboard and he/she can make a new admin for control website appointments or user. An admin can delete or edit any appointment and he/she can approve any appointment from dashboard",
+            "I implemented user login system with firebase authentication. A user must be login if he/she want to make an appointment for their service. If they have no account they can create a new account by clicking register button"
+        ],
+        "technology": [
+            "React JS",
+            "Node JS",
+            "Express JS",
+            "MongoDB",
+            "Firebase",
+            "Tailwind CSS",
+            "NPM Packages"
+        ]
     }
 ]

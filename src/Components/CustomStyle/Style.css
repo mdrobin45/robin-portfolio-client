@@ -3,10 +3,9 @@
     background-repeat: no-repeat;
     background-position: top left;
 }
-.myProjectHeader {
+.sectionHeaderBg {
     background-image: url('../../images/myProjectHeader.png');
     background-repeat: no-repeat;
-    background-position-x: 104px;
     background-position-y: 20px;
 }
 .projectBg{
@@ -20,4 +19,9 @@
     background-position-x: -96px;
     background-position-y: 80px;
     background-repeat: no-repeat;
+}
+.aboutLeft {
+    background-image: url('../../images//aboutShape.png');
+    background-repeat: no-repeat;
+    background-position: left;
 }

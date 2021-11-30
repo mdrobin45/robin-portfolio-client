@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import '../../../CustomStyle/Style.css'
-import ProjectCard from '../../../ProjectCard/ProjectCard';
-import SectionHeader from '../../../SectionHeader/SectionHeader';
+import React, { useEffect } from 'react';
+import { useState } from 'react/cjs/react.development';
+import PageBanner from '../../PageBanner/PageBanner';
+import ProjectCard from '../../ProjectCard/ProjectCard';
+import SectionHeader from '../../SectionHeader/SectionHeader';
 
-const ProjectTab = () =>
+const Projects = () =>
 {
     const [projects, setProjects] = useState([]);
     const [tabId, setTabId] = useState(1);
@@ -35,10 +36,10 @@ const ProjectTab = () =>
             .then(res => res.json())
             .then(data =>setProjects(data));
     }
-
     return (
-        <div className='container py-10'>
-            <div className='projectBg'>
+        <div className='container'>
+            <PageBanner title='Projects' />
+            <div className='mt-16'>
                 <SectionHeader
                     title='My Latest Projects'
                     subTitle='Here is my all latest web development projects. You can get idea about my experience with this projects.'
@@ -60,4 +61,4 @@ const ProjectTab = () =>
     );
 };
 
-export default ProjectTab;
+export default Projects;

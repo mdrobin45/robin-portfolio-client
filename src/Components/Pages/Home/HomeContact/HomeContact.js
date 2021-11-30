@@ -3,6 +3,7 @@ import React from 'react';
 import Swal from 'sweetalert2';
 import ContactImage from '../../../../images/contact-leftimage.png'
 import '../../../CustomStyle/Style.css'
+import SectionHeader from '../../../SectionHeader/SectionHeader';
 
 const HomeContact = () =>
 {
@@ -32,7 +33,25 @@ const HomeContact = () =>
                   })
             }
         }, (error) => {
-            console.log(error.text);
+            if (error.code === 400) {
+                e.target.reset()
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                      toast.addEventListener('mouseenter', Swal.stopTimer)
+                      toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                  })
+                  
+                  Toast.fire({
+                    icon: 'error',
+                    title: 'Oops! something went wrong'
+                  })
+            }
         });
     }
     return (
@@ -43,10 +62,14 @@ const HomeContact = () =>
                         <img src={ContactImage} alt='Contact'/>
                     </div>
                     <div className='md:w-2/4'>
-                    <div className='myProjectHeader'>
+                        <SectionHeader
+                            title='Get In Touch With Me'
+                            subTitle="If you have any question please let me know with this form. I'll reply as soon as possible"
+                        />
+                    {/* <div className='myProjectHeader'>
                         <h2 className='font-bold py-6 text-5xl text-gray-800'>Get In Touch With Me</h2>
                         <p className='text-lg text-gray-700'>If you have any question please let me know with this form. I'll reply as soon as possible</p>
-                    </div>
+                    </div> */}
                         <form onSubmit={sendEmail}>
                             <div>
                                 <input required style={{boxShadow: '2px 2px 30px -15px rgba(43,42,42,0.75)'}} className='focus:outline-none px-3 my-3 py-3 rounded-full text-gray-700 text-lg w-full' type='text' placeholder='Name' name='name'/>
