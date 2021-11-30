@@ -58,18 +58,14 @@ const HomeContact = () =>
         <>
             <div id='HomeContact' className='contactLeft py-20'>
                 <div className='md:flex justify-between items-center container'>
-                    <div className='md:w-2/4'>
+                    <div data-aos='fade-up' data-aos-duration='1500' className='md:w-2/4'>
                         <img src={ContactImage} alt='Contact'/>
                     </div>
-                    <div className='md:w-2/4'>
+                    <div data-aos='fade-up' data-aos-duration='1500' className='md:w-2/4'>
                         <SectionHeader
                             title='Get In Touch With Me'
                             subTitle="If you have any question please let me know with this form. I'll reply as soon as possible"
                         />
-                    {/* <div className='myProjectHeader'>
-                        <h2 className='font-bold py-6 text-5xl text-gray-800'>Get In Touch With Me</h2>
-                        <p className='text-lg text-gray-700'>If you have any question please let me know with this form. I'll reply as soon as possible</p>
-                    </div> */}
                         <form onSubmit={sendEmail}>
                             <div>
                                 <input required style={{boxShadow: '2px 2px 30px -15px rgba(43,42,42,0.75)'}} className='focus:outline-none px-3 my-3 py-3 rounded-full text-gray-700 text-lg w-full' type='text' placeholder='Name' name='name'/>

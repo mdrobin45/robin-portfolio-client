@@ -5,8 +5,8 @@ import '../../../CustomStyle/Style.css'
 
 const HomeAbout = () => {
     return (
-        <div className='aboutLeft'>
-            <div id='#aboutMe' className='pb-16'>
+        <div>
+            <div data-aos='fade-in' data-aos-duration='1500' id='#aboutMe' className='pb-16'>
                 <SectionHeader title='About Me' subTitle='Know more about me by reading my bio. You can also see my linkedin profile. If you have any question you can let me know with my contact form.' middle={true}/>
             </div>
             
@@ -14,7 +14,7 @@ const HomeAbout = () => {
                 <div>
                     <img src={aboutBg} alt="About" />
                 </div>
-                <div>
+                <div data-aos='fade-in' data-aos-duration='1500'>
                     <p className='text-gray-500 text-lg'>
                         My name is Robin. I'm a MERN stack web developer. I like to develop website, and it's my passion. I've completed a professional training at programming hero for web development. I've created 10+ websites with MERN. Now I'm junior web developer.
                     </p><br />

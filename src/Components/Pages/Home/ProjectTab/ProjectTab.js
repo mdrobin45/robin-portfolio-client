@@ -38,20 +38,20 @@ const ProjectTab = () =>
 
     return (
         <div className='container py-10'>
-            <div className='projectBg'>
+            <div data-aos='fade-up' data-aos-duration='1500' className='projectBg'>
                 <SectionHeader
                     title='My Latest Projects'
                     subTitle='Here is my all latest web development projects. You can get idea about my experience with this projects.'
                     middle={true}
                 />
-                <div className='items-center justify-center md:flex md:text-left pt-10 text-center'>
+                <div data-aos='fade-up' data-aos-duration='1500' className='items-center justify-center md:flex md:text-left pt-10 text-center'>
                     <button className='border-2 border-primary md:my-0 mx-3 my-3 px-10 py-2 rounded-full shadow-xl text-gray-700' onClick={()=>allTab(setTabId(1))}  style={tabId===1?{background:"#FEB000",color:'white'}:{background:''}} >ALL</button>
                     <button className='border-2 border-primary md:my-0 mx-3 my-3 px-10 py-2 rounded-full shadow-xl text-gray-700' onClick={()=>tabClick('ecommerce',setTabId(2))} style={tabId===2?{background:"#FEB000",color:'white'}:{background:''}} >ECOMMERCE</button>
                     <button className='border-2 border-primary md:my-0 mx-3 my-3 px-10 py-2 rounded-full shadow-xl text-gray-700' onClick={()=>tabClick('booking',setTabId(3))}  style={tabId===3?{background:"#FEB000",color:'white'}:{background:''}} >BOOKING</button>
                     <button className='border-2 border-primary md:my-0 mx-3 my-3 px-10 py-2 rounded-full shadow-xl text-gray-700' onClick={()=>tabClick('service',setTabId(4))}  style={tabId===4?{background:"#FEB000",color:'white'}:{background:''}} >SERVICE</button>
                 </div> 
             </div>
-            <div className='md:grid py-10 grid-cols-3 gap-4'>
+            <div data-aos='fade-up' data-aos-duration='1500' className='md:grid py-10 grid-cols-3 gap-4'>
                 {
                     projects.map(project => <ProjectCard key={project?.id} project={project}/>)
                 }
