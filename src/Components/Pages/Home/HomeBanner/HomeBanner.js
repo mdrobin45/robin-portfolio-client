@@ -1,6 +1,7 @@
 import React from 'react';
 import BannerRight from '../../../../images/bannerRightImage.jpg'
 import '../../../CustomStyle/Style.css'
+import {BsCloudDownload}from 'react-icons/bs'
 
 const HomeBanner = () => {
     return (
@@ -10,7 +11,12 @@ const HomeBanner = () => {
                     <h1 className='font-bold md:text-5xl pb-4 text-3xl'>Hi, I'm Full Stack Web <span className='text-primary'>Developer & React Expert</span></h1>
                     <p className='text-xl py-3'>I'm a professional web developer / MERN Stack developer</p>
                     <p className='text-lg text-gray-500'>I'm a MERN stack web developer. I like to develop website, and it's my passion. I've completed a professional training at programming hero for web development. I've created 10+ websites with MERN. Now I'm junior web developer.</p>
-                    <a href='/Md_Robin_Rana-Resume.pdf' className='bg-primary inline-block mt-4 px-6 py-3 rounded-3xl text-white text-xl'>DOWNLOAD RESUME</a>
+                    <a className='bg-primary inline-block mt-4 px-6 py-3 rounded-3xl text-white text-lg' href='/Md_Robin_Rana-Resume.pdf'>
+                        <div className='flex items-center'>
+                            <BsCloudDownload />
+                            <p className='pl-2'>Download Resume</p>
+                        </div>
+                    </a>
                 </div>
                 <div className='md:w-2/4'>
                     <img className='w-full' src={BannerRight} alt="Banner " />

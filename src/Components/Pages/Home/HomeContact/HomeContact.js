@@ -37,7 +37,7 @@ const HomeContact = () =>
     }
     return (
         <>
-            <div className='contactLeft py-20'>
+            <div id='HomeContact' className='contactLeft py-20'>
                 <div className='md:flex justify-between items-center container'>
                     <div className='md:w-2/4'>
                         <img src={ContactImage} alt='Contact'/>

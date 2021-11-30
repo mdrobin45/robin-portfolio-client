@@ -8,6 +8,7 @@ import
     Route
   } from "react-router-dom";
 import Home from './Components/Pages/Home/Home';
+import Footer from './Components/Footer/Footer';
 
 const App = () =>
 {
@@ -19,6 +20,7 @@ const App = () =>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
